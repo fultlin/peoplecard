@@ -1,0 +1,51 @@
+.list-cards {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.card {
+  padding: 20px;
+  background-color: antiquewhite;
+  max-width: 170px;
+  text-align: center;
+  position: relative;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.name {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: none;
+}
+
+.card:hover .like-button {
+  display: block;
+}
+
+.like-inactive {
+  fill: none;
+}
+
+.like-active {
+  fill: red;
+}

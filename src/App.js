@@ -3,7 +3,7 @@ import "./App.css";
 import PersonCards from "./components/PersonCards";
 
 function App() {
-  return <PersonCards/>;
+  return <PersonCards />;
 }
 
 export default App;
