@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "../list.css";
 import LikeButton from "./LikeButtin";
 
+
 function PersonCards() {
   const [list, setList] = useState([]);
   useEffect(() => {
@@ -18,7 +19,7 @@ function PersonCards() {
   const personList = list.map((person, index) => {
     return (
       <li className="card" key={index}>
-        <button onClick={() => handleDelete(index)}>Delete</button>
+        <button className="delete" onClick={() => handleDelete(index)}>Delete</button>
         <LikeButton list={person} />
         <img src={person.picture.large} />
         <p className="name">

@@ -49,3 +49,16 @@
 .like-active {
   fill: red;
 }
+
+.delete {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 5px;
+  left: 10px;
+  display: none;
+}
+
+.card:hover .delete {
+  display: block;
+}

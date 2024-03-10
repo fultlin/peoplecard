@@ -2,17 +2,17 @@ import { useState } from "react";
 
 function LikeButton(props) {
   let [like, setLike] = useState([false]);
+  const [fav, setFav] = useState([]);
   function handleClick() {
     setLike(!like);
     if (like) {
-      console.log(1);
+      setFav(props);
       props.list.fav = "fav";
-      console.log(props);
     } else {
-      console.log(0);
       props.list.fav = null;
-      console.log(props);
+      setFav(false);
     }
+    return fav.list;
   }
 
   return (
